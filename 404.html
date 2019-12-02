@@ -22,8 +22,9 @@
       // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
       // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
       // Otherwise, leave segmentCount as 0.
-      window.location.hash = ''; //if you want to reload with an empty hash
-window.location.reload(true); //reload the page and bypass the cache
+//       window.location.hash = ''; //if you want to reload with an empty hash
+// window.location.reload(true); //reload the page and bypass the cache
+window.location.replace( window.location.toString() );
     </script>
   </head>
   <body>
